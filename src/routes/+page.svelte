@@ -12,7 +12,7 @@
 <div class="snap-container">
 	<!-- Section 1: Original Text -->
 	<div class="snap-section flex h-screen items-center justify-center">
-		<h1 class="text-center font-serif text-6xl font-extralight md:text-8xl lg:text-9xl">
+		<h1 class="text-center font-serif text-6xl md:text-8xl lg:text-9xl">
 			Scroll To See <br />
 			<span class="italic underline decoration-emerald-600">Your Life</span>
 		</h1>
@@ -27,7 +27,7 @@
 				<p class="font-bold text-red-400">Scrolling</p>
 				<p class="font-bold text-emerald-700">Living</p>
 			</div>
-			<div class="space-y-5">
+			<div class="space-y-3">
 				<div class="grid grid-cols-60 gap-1 md:gap-1.5 md:grid-cols-100">
 					{#each sWeeks as sWeek}
 						<div class="h-1 w-1 rounded-full bg-black md:h-2 md:w-2"></div>
@@ -48,7 +48,7 @@
 	</div>
 
 	<div class="snap-section flex h-screen items-center justify-center">
-		<h1 class="text-center font-serif text-7xl font-extralight md:text-8xl lg:text-9xl">
+		<h1 class="text-center font-serif text-7xl md:text-8xl lg:text-9xl">
 			13 Years. <br />
 			676 weeks. <br />
 			<span class="italic underline decoration-red-400">Scrolling</span>
