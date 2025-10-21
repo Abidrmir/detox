@@ -18,10 +18,9 @@
 		</h1>
 	</div>
 
-	<!-- Section 2: Image + Text Example -->
 	<div class="snap-section flex h-screen justify-center overflow-hidden bg-gray-100 p-4">
 		<div class="max-h-full md:overflow-y-auto">
-			<h2 class="mb-2 text-center font-serif text-5xl md:text-8xl">Your Life in Weeks</h2>
+			<h2 class="mb-2 text-center font-serif text-4xl md:text-8xl">Your Life in Weeks</h2>
 			<div class="mb-3 flex items-center justify-center space-x-3 text-center font-serif text-sm md:text-2xl">
 				<p class="font-bold text-black">Sleeping</p>
 				<p class="font-bold text-red-400">Scrolling</p>
