@@ -7,6 +7,8 @@
 
 	const livedWeeks = 41 * 52;
 	const lWeeks = Array.from({ length: livedWeeks }, (_, i) => i);
+
+    import mainVideo from '$lib/videos/main.mp4';
 </script>
 
 <div class="snap-container">
@@ -53,6 +55,23 @@
 			<span class="italic underline decoration-red-400">Scrolling</span>
 		</h1>
 	</div>
+
+
+    <div class="snap-section flex h-screen items-center justify-center bg-black">
+        <div class="relative w-full max-w-6xl px-4">
+            <video 
+            class="w-full rounded-lg shadow-2xl"
+            controls
+            loop
+            muted
+            playsinline
+            src={mainVideo}
+        >
+            Your browser does not support the video tag.
+        </video>
+
+        </div>
+    </div>
 	<!-- Add more sections here as needed -->
 	<!-- Just copy the snap-section div structure and add your own content -->
 </div>
