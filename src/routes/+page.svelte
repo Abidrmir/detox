@@ -9,10 +9,42 @@
 	const lWeeks = Array.from({ length: livedWeeks }, (_, i) => i);
 
     import mainVideo from '$lib/videos/main.mp4';
+    import vid2 from '$lib/videos/vid2.mp4'
+    import vid3 from '$lib/videos/vid3.mp4'
+    import vid4 from '$lib/videos/vid4.mp4'
+    import vid5 from '$lib/videos/vid5.mp4'
+
+    const videos = [mainVideo, vid2, vid3, vid4, vid5];
+
+    const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+
 </script>
 
 <div class="snap-container">
-	<!-- Section 1: Original Text -->
+    <div class="snap-section flex h-screen items-center justify-center bg-cyan-200">
+        <div class="relative w-full max-w-6xl px-4">
+            <video 
+            class="w-full rounded-lg shadow-2xl"
+            controls
+            autoplay
+            muted
+            playsinline
+            src={randomVideo}
+        >
+            Your browser does not support the video tag.
+        </video>
+        </div>
+    </div>
+
+    <div class="snap-section flex h-screen justify-center bg-gray-200">
+        <div class="flex flex-col text-center space-y-10">
+            <h1 class="font-serif text-5xl mt-5">
+                Answer The Folloing Quiz To See Full Video
+            </h1>
+            <p class="text-8xl">5 x 23 =</p>
+        </div>
+	</div>
+
 	<div class="snap-section flex h-screen items-center justify-center">
 		<h1 class="text-center font-serif text-6xl md:text-8xl lg:text-9xl">
 			Scroll To See <br />
@@ -55,23 +87,6 @@
 			<span class="italic underline decoration-red-400">Scrolling</span>
 		</h1>
 	</div>
-
-
-    <div class="snap-section flex h-screen items-center justify-center bg-black">
-        <div class="relative w-full max-w-6xl px-4">
-            <video 
-            class="w-full rounded-lg shadow-2xl"
-            controls
-            loop
-            muted
-            playsinline
-            src={mainVideo}
-        >
-            Your browser does not support the video tag.
-        </video>
-
-        </div>
-    </div>
 	<!-- Add more sections here as needed -->
 	<!-- Just copy the snap-section div structure and add your own content -->
 </div>
